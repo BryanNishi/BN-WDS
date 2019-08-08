@@ -1,0 +1,157 @@
+.hero {
+    height: 99vh;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.logo img {
+    margin-top: 10vh;
+    position: absolute;
+    width: 20rem;
+    max-width: 90vw;
+    animation: 1.5s ease-out 0s 1 slideInFromSide;
+}
+
+.hero_text button {
+    background-attachment: fixed;
+    position: relative;
+    font-family: garamond;
+    animation: 1.5s ease-out 0s 1 slideInFromBottom;
+}
+
+.hero_text h2 {
+    text-align: center;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 35%;
+    font-family: garamond;
+    text-shadow: 2px 2px black;
+    animation: 1.5s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes slideInFromSide {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background-color: #222;
+    border-bottom: 0.25rem solid teal;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.5rem;
+    font-family: garamond;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main_content {
+    background-color: #222;
+    background-size: cover;
+}
+
+.about {
+    background-image: url("./images/about_BG.jpg");
+    background-position-x: 50%;
+    color: white;
+}
+
+#about h1 {
+    margin: 0;
+    padding: 1rem;
+    font-family: garamond;
+}
+
+.me {
+    margin: 0rem 5rem;
+    border-radius: 50%;
+    border: 2px solid teal;
+}
+
+.skills{
+    background-color: rgba(50, 100, 104, 0.3);
+    padding: 2rem;
+    font-family: garamond;
+    font-size: 1.1rem;
+}
+
+.intro {
+    background-color: rgba(0, 150, 170, 0.3);
+    padding: 2rem;
+    margin-bottom: 4rem;
+    font-family: garamond;
+    font-size: 1.1rem;
+}
+
+.cta{
+    background-color: rgba(175, 175, 175, 0.3);
+    padding: 2rem;
+    font-family: garamond;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .hero_text h2 {
+        padding-top: 145%;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+    }
+}
