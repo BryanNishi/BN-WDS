@@ -17,7 +17,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100vw;
+    min-width: 99vw;
     min-height: 100vh;
 }
 
@@ -99,16 +99,25 @@
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
+    position: sticky;
     width: 100%;
+    z-index: 1;
+    top: 0
 }
 
 /* ************************************************************     CONTENT      *********************************************************** */
 
 .main_content {
-    background-color: #222;
+    background-image: linear-gradient(to bottom right, rgb(0, 36, 34), rgb(0, 75, 71), rgb(0, 20, 19));
     background-size: cover;
+}
+
+.title {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-family: garamond;
+    color: white;
+    border-bottom: 0.5rem double white;
 }
 
 /* ************************************************************About************************************************** */
@@ -117,40 +126,57 @@
     background-image: url("./images/about_BG.jpg");
     background-position-x: 50%;
     color: white;
-}
-
-#about h1 {
-    margin: 0;
     padding: 1rem;
-    font-family: garamond;
 }
 
 .me {
-    margin: 0rem 5rem;
+    margin: 0.5rem 4rem;
     border-radius: 50%;
     border: 2px solid teal;
 }
 
 .skills {
-    background-color: rgba(50, 100, 104, 0.3);
+    background-color: rgba(175, 175, 175, 0.3);
     padding: 2rem;
     font-family: garamond;
     font-size: 1.1rem;
 }
 
+.skill h5{
+    line-height: 2.5;
+}
+
+.progress {
+    margin: 0.5rem 0rem;
+    height: 2rem;
+}
+
+.progress h5 {
+    color: black;
+    font-size: 0.75rem;
+    font-family: helvetica;
+}
+
 .intro {
-    background-color: rgba(0, 150, 170, 0.3);
+    background-color: rgba(0, 150, 150, 0.3);
     padding: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-family: garamond;
     font-size: 1.1rem;
 }
 
 .cta {
-    background-color: rgba(175, 175, 175, 0.3);
+    background-color: rgba(0, 150, 150, 0.3);
     padding: 2rem;
     font-family: garamond;
     font-size: 1.1rem;
+}
+
+/* ************************************************************Portfolio************************************************** */
+
+/* ************************************************************Contact************************************************** */
+.icons img {
+    max-width: 3rem;
 }
 
 /* *******************************************************Media Queries*********************************************** */
