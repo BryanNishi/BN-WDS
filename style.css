@@ -142,7 +142,7 @@
     font-size: 1.1rem;
 }
 
-.skill h5{
+.skill h5 {
     line-height: 2.5;
 }
 
@@ -173,10 +173,85 @@
 }
 
 /* ************************************************************Portfolio************************************************** */
+.cards {
+    background-image: url("./images/about_BG.jpg");
+    background-position-x: 75%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    margin: 1rem;
+    height: 20rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgba(0, 199, 199, 0.4);
+}
+
+.card p {
+    color: rgb(0, 175, 175);
+    border: 1px solid rgb(0, 175, 175);
+    border-radius: 3%;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.recommend {
+    color: white;
+}
+
+.recommend h1 {
+    font-family: garamond;
+    text-decoration: underline;
+}
+
+.reviews,
+.endorsements {
+    background-color: rgba(37, 56, 56, 0.9);
+    padding: 1rem;
+    margin: 1rem;
+}
+
 
 /* ************************************************************Contact************************************************** */
+#contact {
+    background-image: url("./images/about_BG.jpg");
+    background-position-x: 75%;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+#contact form {
+    display: table-caption;
+    text-align: center;
+}
+
+.info {
+    margin: 1rem;
+}
+
+.small_logo {
+    max-height: 14rem;
+}
+
+.icons {
+    margin: 1.5rem 0rem;
+    text-align: center;
+}
+
 .icons img {
     max-width: 3rem;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 /* *******************************************************Media Queries*********************************************** */
