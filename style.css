@@ -46,43 +46,6 @@
     animation: 1.5s ease-out 0s 1 slideInFromTop;
 }
 
-/* *******************************************************Hero Animation******************************************* */
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes slideInFromSide {
-    0% {
-        transform: translateX(-50%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
 /* ************************************************************Navbar************************************************** */
 .navbar {
@@ -255,12 +218,24 @@
 }
 
 /* *******************************************************Media Queries*********************************************** */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+    html {
+        width: 75vw;
+    }
+
+    .fullscreen-bg {
+        width: 90vw;
+    }
+
     .hero_text h2 {
         padding-top: 145%;
     }
 
     .nav-link {
         font-size: 0.75rem;
+    }
+
+    .info {
+        font-size: 1.5rem;
     }
 }
