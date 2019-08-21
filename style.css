@@ -1,10 +1,7 @@
-.main_container {
-    overflow: hidden;
-}
-
 /* **********************************************Hero*************************************************** */
 .hero {
     height: 99vh;
+    overflow: hidden;
 }
 
 .fullscreen-bg {
@@ -77,6 +74,7 @@
 .main_content {
     background-image: linear-gradient(to bottom right, rgb(0, 36, 34), rgb(0, 75, 71), rgb(0, 20, 19));
     background-size: cover;
+    overflow: hidden;
 }
 
 .title {
