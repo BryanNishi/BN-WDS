@@ -1,3 +1,7 @@
+.main_container {
+    overflow: hidden;
+}
+
 /* **********************************************Hero*************************************************** */
 .hero {
     height: 99vh;
@@ -219,16 +223,13 @@
 
 /* *******************************************************Media Queries*********************************************** */
 @media only screen and (max-width: 480px) {
-    html {
-        width: 75vw;
-    }
-
-    .fullscreen-bg {
-        width: 90vw;
+    .main_content {
+        background-image: none;
+       background-color: rgb(0, 65, 65);
     }
 
     .hero_text h2 {
-        padding-top: 145%;
+        padding-top: 125%;
     }
 
     .nav-link {
