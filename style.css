@@ -176,7 +176,8 @@
 
 .reviews,
 .endorsements {
-    background-color: rgba(37, 56, 56, 0.9);
+    background-attachment: fixed;
+    background-image:linear-gradient(200deg, teal, black);
     padding: 1rem;
     margin: 1rem;
 }
@@ -223,7 +224,7 @@
 @media only screen and (max-width: 480px) {
     .main_content {
         background-image: none;
-       background-color: rgb(0, 65, 65);
+        background-color: rgb(0, 65, 65);
     }
 
     .hero_text h2 {
